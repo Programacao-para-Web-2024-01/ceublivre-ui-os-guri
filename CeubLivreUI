@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketplace</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="carrinho.html">Carrinho</a></li>
+                <li><a href="perfil.html">Perfil</a></li>
+            </ul>
+            <input type="text" placeholder="Buscar produtos">
+        </nav>
+    </header>
+    <main>
+        <section id="destaques">
+            <h2>Produtos em Destaque</h2>
+        </section>
+        <section id="categorias">
+            <h2>Categorias</h2>
+        </section>
+        <section id="novidades">
+            <h2>Novidades</h2>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login / Registro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <section id="login">
+            <h2>Login</h2>
+            <form id="login-form">
+                <input type="email" placeholder="E-mail" required>
+                <input type="password" placeholder="Senha" required>
+                <button type="submit">Login</button>
+            </form>
+            <button id="forgot-password">Esqueci minha senha</button>
+            <p>Não tem uma conta? <a href="#register">Registre-se aqui</a></p>
+            <button class="external-login">Login com Google</button>
+            <button class="external-login">Login com Facebook</button>
+        </section>
+
+        <section id="register">
+            <h2>Registro</h2>
+            <form id="register-form">
+                <input type="text" placeholder="Nome" required>
+                <input type="email" placeholder="E-mail" required>
+                <input type="password" placeholder="Senha" required>
+                <input type="password" placeholder="Confirme a senha" required>
+                <button type="submit">Registrar</button>
+            </form>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="carrinho.html">Carrinho</a></li>
+                <li><a href="perfil.html">Perfil</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="filtros">
+            <h2>Filtrar Produtos</h2>
+        </section>
+        <section id="lista-produtos">
+            <h2>Lista de Produtos</h2>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////]
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="carrinho.html">Carrinho</a></li>
+                <li><a href="perfil.html">Perfil</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="detalhes-produto">
+            <h2>Nome do Produto</h2>
+            <img src="imagem-do-produto.jpg" alt="Imagem do Produto">
+            <p>Descrição do produto</p>
+            <p>Preço: R$ 100,00</p>
+            <p>Variações: Tamanho, Cor, etc.</p>
+            <button id="add-carrinho">Adicionar ao Carrinho</button>
+        </section>
+        <section id="comentarios">
+            <h2>Comentários e Avaliações</h2>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="carrinho.html">Carrinho</a></li>
+                <li><a href="perfil.html">Perfil</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="carrinho">
+            <h2>Seu Carrinho</h2>
+            <p>Total: R$ 300,00</p>
+            <button id="checkout">Finalizar Compra</button>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="carrinho.html">Carrinho</a></li>
+                <li><a href="perfil.html">Perfil</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="checkout">
+            <h2>Informações de Entrega e Pagamento</h2>
+            <form id="checkout-form">
+                <p>Total: R$ 300,00</p>
+                <button type="submit">Confirmar Compra</button>
+            </form>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="carrinho.html">Carrinho</a></li>
+                <li><a href="perfil.html">Perfil</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="pedidos">
+            <h2>Seus Pedidos</h2>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="carrinho.html">Carrinho</a></li>
+                <li><a href="perfil.html">Perfil</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="perfil">
+            <h2>Perfil do Usuário</h2>
+            <h3>Histórico de Pedidos</h3>
+            <h3>Configurações da Conta</h3>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+nav input[type="text"] {
+    margin: 10px 0;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    background: #fff;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #333;
+}
+
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.external-login {
+    background-color: #4285F4;
+    margin-top: 10px;
+}
+
+.external-login:hover {
+    background-color: #357AE8;
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('login-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        alert('Login realizado com sucesso!');
+    });
+
+    document.getElementById('register-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        alert('Registro realizado com sucesso!');
+    });
+
+    document.getElementById('forgot-password').addEventListener('click', function() {
+        alert('Link de recuperação de senha enviado!');
+    });
+
+    const produtosDestaque = document.getElementById('destaques');
+    produtosDestaque.innerHTML = `
+        <div>
+            <img src="produto1.jpg" alt="Produto 1">
+            <p>Produto 1</p>
+            <p>R$ 100,00</p>
+            <button>Adicionar ao Carrinho</button>
+        </div>
+    `;
+
+});
